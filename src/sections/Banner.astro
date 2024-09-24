@@ -1,0 +1,30 @@
+<div class="flex flex-col lg:flex-row justify-center gap-1 items-center max-w-6xl mx-auto xl:px-6">
+  <section
+    class="flex-1 flex flex-col md:gap-5 gap-10 xl:pl-0 pl-5 lg:mt-0 mt-10 lg:text-left text-center"
+  >
+    <h1 class="xl:text-7xl text-6xl font-bold text-slate-800">
+      Impresiones 3D: <br /> Tu Universo Creativo.
+    </h1>
+    <p class="text-xl text-slate-600 font-semibold">
+      Transforma tus ideas en realidad con la impresión 3D.
+    </p>
+  </section>
+
+  <div class="h-[800px] md:w-full w-[300px] bg-slate-50 flex-1 mt-1 cursor-pointer" id="container">
+  </div>
+</div>
+<script>
+  import { RenderModel } from '../utils/RenderModel';
+  const container = document.getElementById('container')!;
+
+  const folderModels = ['mario_funko_pop_bros', 'luigi_funko_pop_bros'];
+
+  const renderRandomModel = () => {
+    const randomNumber = Math.ceil(Math.random() * folderModels.length - 1);
+    return folderModels[randomNumber];
+  };
+
+  const { animate } = RenderModel(container, `/model/${renderRandomModel()}`);
+
+  animate();
+</script>

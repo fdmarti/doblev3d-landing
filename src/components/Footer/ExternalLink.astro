@@ -1,0 +1,9 @@
+---
+const { icon: Icon, url } = Astro.props;
+---
+
+<li>
+  <a href={url} target="_blank" class="hover:text-slate-800">
+    {Icon && <Icon size={35} />}
+  </a>
+</li>

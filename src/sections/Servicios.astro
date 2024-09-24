@@ -1,0 +1,46 @@
+---
+import { PersonalizedIcon, MaterialsIcon, ModeladoIcon, ServiceIcon } from '@components/Icons';
+import Card from '@components/Card.astro';
+
+const cardServicios = [
+  {
+    icon: PersonalizedIcon,
+    title: 'Impresión 3D Personalizada',
+    content:
+      'Ofrecemos servicios de impresión 3D a medida para que puedas crear productos únicos según tus especificaciones. Desde prototipos hasta piezas funcionales, trabajamos contigo para dar vida a tus ideas.',
+  },
+  {
+    icon: ModeladoIcon,
+    title: 'Modelado 3D Profesional',
+    content:
+      'Nuestro equipo de diseñadores expertos puede ayudarte a transformar tus conceptos en modelos 3D listos para imprimir. Ya sea que tengas un boceto o una idea, te asistimos en cada paso del proceso de diseño.',
+  },
+  {
+    icon: MaterialsIcon,
+    title: 'Materiales de Alta Calidad',
+    content:
+      'Utilizamos una variedad de materiales de impresión 3D, desde plásticos hasta resinas.Cada material tiene características específicas que se adaptan a tus necesidades, garantizando la durabilidad y la calidad de tus productos.',
+  },
+  {
+    icon: ServiceIcon,
+    title: 'Servicio de Post-Procesamiento',
+    content:
+      'Ofrecemos opciones de post-procesamiento para mejorar la apariencia y funcionalidad de tus impresiones. Desde lijado y pintado hasta ensamblaje, nos aseguramos de que cada pieza cumpla con tus expectativas y requisitos.',
+  },
+];
+---
+
+<div
+  class="flex flex-col justify-center gap-1 items-center max-w-6xl mx-auto pb-10 px-5 mt-10 lg:mt-0"
+  id="servicios"
+>
+  <h2 class="text-center font-semibold text-5xl text-slate-900">Servicios</h2>
+  <div class="border-[1px] w-full my-5"></div>
+  <section class="grid md:grid-cols-2 gap-5 mt-5">
+    {
+      cardServicios.map((serv) => (
+        <Card icon={serv.icon} title={serv.title} content={serv.content} />
+      ))
+    }
+  </section>
+</div>

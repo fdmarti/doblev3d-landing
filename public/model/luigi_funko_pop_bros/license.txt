@@ -1,0 +1,11 @@
+Model Information:
+* title:	Luigi Funko Pop Bros
+* source:	https://sketchfab.com/3d-models/luigi-funko-pop-bros-6a4c094217c54231a1d75e9609756a3b
+* author:	elemental the jackal (https://sketchfab.com/mmet)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Luigi Funko Pop Bros" (https://sketchfab.com/3d-models/luigi-funko-pop-bros-6a4c094217c54231a1d75e9609756a3b) by elemental the jackal (https://sketchfab.com/mmet) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

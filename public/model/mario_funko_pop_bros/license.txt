@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mario Funko Pop Bros
+* source:	https://sketchfab.com/3d-models/mario-funko-pop-bros-82a51f86f3594248bc568014104cb7e2
+* author:	elemental the jackal (https://sketchfab.com/mmet)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mario Funko Pop Bros" (https://sketchfab.com/3d-models/mario-funko-pop-bros-82a51f86f3594248bc568014104cb7e2) by elemental the jackal (https://sketchfab.com/mmet) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

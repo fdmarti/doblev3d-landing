@@ -1,0 +1,13 @@
+---
+const { icon: Icon, title, content } = Astro.props;
+---
+
+<div
+  class="bg-slate-200 p-10 shadow rounded flex flex-col items-center justify-center gap-3 text-center hover:shadow-inner hover:cursor-pointer"
+>
+  {Icon && <Icon size={70} />}
+  <h3 class="font-bold text-xl text-slate-800">{title}</h3>
+  <p class="text-slate-600 font-medium">
+    {content}
+  </p>
+</div>
