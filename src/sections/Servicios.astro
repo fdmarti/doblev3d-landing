@@ -1,5 +1,6 @@
 ---
 import { PersonalizedIcon, MaterialsIcon, ModeladoIcon, ServiceIcon } from '@components/Icons';
+import { Divider } from '@components/Content';
 import Card from '@components/Card.astro';
 
 const cardServicios = [
@@ -35,7 +36,7 @@ const cardServicios = [
   id="servicios"
 >
   <h2 class="text-center font-semibold text-5xl text-slate-900">Servicios</h2>
-  <div class="border-[1px] w-full my-5"></div>
+  <Divider />
   <section class="grid md:grid-cols-2 gap-5 mt-5">
     {
       cardServicios.map((serv) => (

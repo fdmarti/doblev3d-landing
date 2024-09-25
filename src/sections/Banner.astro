@@ -24,7 +24,6 @@
     return folderModels[randomNumber];
   };
 
-  const { animate } = RenderModel(container, `/model/${renderRandomModel()}`);
-
-  animate();
+  const result = RenderModel(container, `/model/${renderRandomModel()}`);
+  if (result) result.fn();
 </script>

@@ -1,0 +1,19 @@
+---
+import Layout from 'src/layouts/Layout.astro';
+import { FormContact } from '@components/Contact';
+import { Divider } from '@components/Content';
+import { Notification } from '@components/Notifications';
+---
+
+<Layout title="DOBLE V 3D | Contacto">
+  <main class="bg-slate-50 h-screen relative">
+    <Notification />
+    <div
+      class="flex flex-col justify-center gap-1 items-center max-w-6xl mx-auto pb-10 px-5 pt-10 lg:mt-0"
+    >
+      <h2 class="text-center font-semibold text-5xl text-slate-900 pt-10">Contacto</h2>
+      <Divider />
+      <FormContact client:only="vue" />
+    </div>
+  </main>
+</Layout>

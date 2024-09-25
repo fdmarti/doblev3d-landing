@@ -3,8 +3,16 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 export const RenderModel = (container: HTMLElement, urlModel: string) => {
+  let state = true;
+  let fn = () => {};
+
+  if (!container) return (state = false);
+
   let width = container!.clientWidth;
   let height = container!.clientHeight;
+
+  if (!width) state = false;
+  if (!height) state = false;
 
   const renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -71,7 +79,10 @@ export const RenderModel = (container: HTMLElement, urlModel: string) => {
     renderer.render(scene, camera);
   }
 
+  fn = animate;
+
   return {
-    animate,
+    state,
+    fn,
   };
 };
